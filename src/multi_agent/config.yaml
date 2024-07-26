@@ -1,0 +1,17 @@
+carla : {'host' : '127.0.0.1', 'port' : 2000, 'timeout' : 10.0}
+camera : { 'fov': 90, 'width': 1242, 'height': 375 }
+mode : { 'delta' : 0.2, 'sync': True }
+car :  'vehicle.toyota.prius' #'vehicle.volkswagen.t2'
+camera_type : 'sensor.camera.rgb'
+num_agents : 3
+score_threshold: 0.39
+agent_threshold: 40 #m
+cluster_threshold : {'Car': 3 , 'Pedestrian' : 1 } #m
+iou_threshold : 0.3 #
+giou_threshold : 0.1 #
+sim_threshold : 0.3
+model_path : '/export/amsvenkat/project/3d-multi-agent-tracking/obj_det_model/v8.1_model_best_metric_051.pth'
+num_hypo : 1
+results_path : '/export/amsvenkat/project/data/seqs/'
+record_path : '/export/amsvenkat/project/3d-multi-agent-tracking/src/multi_agent/record/'
+seq_num: 1

@@ -1,0 +1,28 @@
+MODEL:
+  #WEIGHT: "catalog://ImageNetPretrained/DLA34"
+  # MAke this false during testing and True when training
+  VAL: False
+  WEIGHT: "/export/amsvenkat/project/model_final.pth"
+INPUT:
+  FLIP_PROB_TRAIN: 0.5
+  SHIFT_SCALE_PROB_TRAIN: 0.3
+DATASETS:
+  DETECT_CLASSES: ("Car", "Cyclist", "Pedestrian")
+  # Changed for carla data
+  # TRAIN: ("kitti_train",)
+  # TEST: ("kitti_test",)
+  # VALIDATION: ("kitti_val",)
+  TRAIN: ("carla_train",)
+  TEST: ("carla_val",)
+  VALIDATION: ("carla_val",)
+  TRAIN_SPLIT: "train"
+  TEST_SPLIT: "val"
+  VALIDATION_SPLIT: "val"
+  CUSTOM_DATA: True
+SOLVER:
+  BASE_LR: 0.00025
+  STEPS: (30, 40)
+  MAX_ITERATION: 74083
+  IMS_PER_BATCH: 6
+  # STEPS: (56108, 93512)
+  # MAX_ITERATION: 112215

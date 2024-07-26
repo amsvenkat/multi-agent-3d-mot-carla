@@ -1,0 +1,19 @@
+{
+    "class_range": {
+      "Car": 50,
+      "Pedestrian": 40
+    },
+    "dist_fcn": "center_distance",
+    "dist_ths": [0.5, 1.0, 2.0, 4.0],
+    "dist_th_tp": 2.0,
+    "min_recall": 0.1,
+    "min_precision": 0.1,
+    "max_boxes_per_sample": 500,
+    "mean_ap_weight": 5,
+    "imgset_path": "/export/amsvenkat/project/data/train_v5/ImageSets/",
+    "gts_path": "/export/amsvenkat/project/data/train_v5/label_1/",
+    "preds_path": "/export/amsvenkat/project/3d-multi-agent-tracking/SMOKE/logs/logs_v8.1/inference/carla_test/data/",
+    "plot_path":  "/export/amsvenkat/project/3d-multi-agent-tracking/SMOKE/logs/logs_v8.1/plot",
+    "output_path" : "/export/amsvenkat/project/3d-multi-agent-tracking/SMOKE/logs/logs_v8.1/eval" 
+  }
+  

@@ -1,0 +1,14 @@
+carla/
+src/SMOKE/build
+src/SMOKE/dist
+src/SMOKE/logs
+src/SMOKE/smoke.egg-info
+src/SMOKE/wandb
+src/SMOKE/environment.yml
+.vscode/
+*.pyc
+__pycache__/
+xinshuo_*/
+Xinshuo_*/
+results/
+obj_det_model/
